@@ -1,16 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Penis Penis Peeeenis!</title>
-    <link rel="stylesheet" href="lib/style.css" type="text/css">
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Penis Peeeenis!</title>
+  <link rel="stylesheet" href="lib/style.css" type="text/css">
+</head>
 
-  <body>
-
-
-  <script src="lib/main.js"></script>
-  </body>
+<body>
+  <p id='reply'></p>
+  <button onclick="play()">PLAY</button>
+  <script>
+    function play() {
+      var x = Math.floor(Math.random() * 3 + 1);
+      var y;
+      console.log(x);
+      if (x === 1) {
+        y = 'ROCK';
+        console.log(y);
+        document.getElementById('reply').innerHTML = y;
+      } else if (x === 2) {
+        y = 'PAPER';
+        console.log(y);
+        document.getElementById('reply').innerHTML = y;
+      } else {
+        y = 'SCISSORS';
+        console.log(y);
+        document.getElementById('reply').innerHTML = y;
+      }
+    }
+  </script>
+</body>
 </html>
